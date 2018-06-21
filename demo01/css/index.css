@@ -1,0 +1,322 @@
+/**
+ * Created by Administrator on 2018/6/19 19:43.
+ */
+/**
+ * Created by Administrator on 2018/6/19 17:26.
+ */
+/*样式重置*/
+html,
+body,
+ul,
+ol,
+li,
+img,
+h3,
+h4,
+a,
+p,
+div,
+form,
+input {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "微软雅黑", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none;
+  color: #666;
+}
+img {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+}
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::before {
+  display: table;
+  content: "";
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.bl {
+  border-left: 1px solid #ddd;
+}
+.bb {
+  border-bottom: 1px solid #ddd;
+}
+.mt15 {
+  margin-top: 0.46875rem;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 20.07px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 32px;
+  }
+}
+.layout {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+.layout .head {
+  height: 1.40625rem;
+  line-height: 1.40625rem;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.53125rem;
+}
+.layout .head .location {
+  font-size: 0.375rem;
+  color: #d3079e;
+  position: relative;
+  float: left;
+  margin-left: 0.3125rem;
+}
+.layout .head .location:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 0.3125rem solid transparent;
+  border-top-color: #d3079e;
+  top: 0.625rem;
+  right: -0.75rem;
+}
+.layout .head .user-logo {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: url(../images/icon/my.png) no-repeat center / cover;
+  background-size: 0.75rem 0.75rem;
+  margin-top: 0.3125rem;
+  margin-right: 0.3125rem;
+  display: block;
+  float: right;
+}
+.layout .banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.layout .banner ul {
+  width: 1000%;
+  position: relative;
+}
+.layout .banner ul li {
+  width: 14.28571429%;
+  float: left;
+}
+.layout .banner ul li a {
+  width: 100%;
+  display: block;
+}
+.layout .banner ul li a img {
+  width: 100%;
+  display: block;
+}
+.layout .banner ol {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3px;
+}
+.layout .banner ol li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e2dcdd;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  float: left;
+}
+.layout .banner ol li.active {
+  background-color: #fff;
+}
+.layout .service {
+  margin: 4px 0;
+}
+.layout .service ul li {
+  float: left;
+  width: 33.3%;
+}
+.layout .service ul li a {
+  padding: 4px;
+  display: block;
+}
+.layout .service ul li a img {
+  width: 100%;
+}
+.layout .nav-link {
+  border-bottom: 1px solid #ddd;
+}
+.layout .nav-link ul li {
+  width: 25%;
+  float: left;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.layout .nav-link ul li:nth-of-type(4n) {
+  border-right-color: transparent;
+}
+.layout .nav-link ul li a {
+  width: 100%;
+  display: block;
+}
+.layout .nav-link ul li a img {
+  width: 100%;
+}
+.layout .hot-product {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.layout .hot-product a {
+  float: left;
+  width: 50%;
+}
+.layout .hot-product a img {
+  width: 100%;
+}
+.layout .hot-activity {
+  background-color: #f1f1f1;
+  padding-bottom: 0.46875rem;
+}
+.layout .hot-activity .activity-top {
+  height: 1.09375rem;
+  padding-left: 0.46875rem;
+}
+.layout .hot-activity .activity-top h3 {
+  line-height: 1.09375rem;
+  font-size: 0.46875rem;
+  font-weight: normal;
+}
+.layout .hot-activity .activity-bot {
+  border-top: 1px solid #ddd;
+}
+.layout .hot-activity .activity-bot li {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.layout .hot-activity .activity-bot li a img {
+  width: 100%;
+}
+.layout .items {
+  border-top: 1px solid #ddd;
+}
+.layout .items .item-tit {
+  height: 1.375rem;
+}
+.layout .items .item-tit ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 0.375rem;
+}
+.layout .items .item-tit ul li a {
+  padding: 0 10px;
+  line-height: 1.375rem;
+  display: inline-block;
+}
+.layout .items .item-tit ul li.avatar a {
+  border-bottom: 2px solid #d3079e;
+  color: #d3079e;
+}
+.layout .items .item {
+  margin-bottom: 0.46875rem;
+}
+.layout .items .item .item-img img {
+  width: 100%;
+}
+.layout .items .item .item-con {
+  background-color: #fff;
+}
+.layout .items .item .item-con p:first-child {
+  font-size: 0.375rem;
+}
+.layout .items .item .item-con p:last-child {
+  font-size: 0.5rem;
+  color: #2d2d2d;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.layout .more {
+  text-align: center;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  font-size: 0.375rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.layout .more i {
+  font-style: normal;
+  font-weight: bolder;
+  margin-left: 0.9375rem;
+  font-family: "宋体";
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+.layout .goTop {
+  background-color: #d3079e;
+  color: #fff;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+}
+.layout .goTop a {
+  color: #fff;
+  float: left;
+  display: block;
+  font-size: 0.4375rem;
+  margin: 0 0.3125rem;
+}
+.layout .goTop span {
+  font-size: 0.4375rem;
+  margin-right: 0.25rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=index.css.map */
